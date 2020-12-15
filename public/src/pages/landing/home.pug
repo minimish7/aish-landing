@@ -1,9 +1,9 @@
 mixin highlight_reel()
-  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+  #highlightCarousel.carousel.slide(data-ride='carousel')
     ol.carousel-indicators
-      li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-      li(data-target='#carouselExampleIndicators' data-slide-to='1')
-      li(data-target='#carouselExampleIndicators' data-slide-to='2')
+      li.active(data-target='#highlightCarousel' data-slide-to='0')
+      li(data-target='#highlightCarousel' data-slide-to='1')
+      li(data-target='#highlightCarousel' data-slide-to='2')
     .carousel-inner
       .carousel-item.active
         img(src='/assets/flower.png' alt='First slide')
@@ -11,14 +11,14 @@ mixin highlight_reel()
         img(src='/assets/yay.jpg' alt='Second slide')
       .carousel-item
         img(src='/assets/camera.svg' alt='Third slide')
-    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+    a.carousel-control-prev(href='#highlightCarousel' role='button' data-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.sr-only Previous
-    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+    a.carousel-control-next(href='#highlightCarousel' role='button' data-slide='next')
       span.carousel-control-next-icon(aria-hidden='true')
       span.sr-only Next
 
-.landing-page
+.scroll-page
   .row
     .d-flex.flex-column.col-md-5
       +highlight_reel()

@@ -3,14 +3,19 @@
 @charcoal: #423C3D;
 @sand: #F6EDE9;
 
-.viewer {
+.page-deck {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-.landing-page {
+.carousel-inner {
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll-page {
   width: 100vw;
   height: 100vh;
   background: white;
@@ -20,21 +25,21 @@
   scroll-snap-stop: normal;
 }
 
-.landing-page:nth-child(1) {
+.scroll-page:nth-child(1) {
   background-color: @lilac;
   color: white;
 }
 
-.landing-page:nth-child(2) {
+.scroll-page:nth-child(2) {
   background-color: @charcoal;
   color: white;
 }
 
-.landing-page:nth-child(3) {
+.scroll-page:nth-child(3) {
   background-color: #fff;
 }
 
-.landing-page:nth-child(4) {
+.scroll-page:nth-child(4) {
   background-color: #fff;
 }
 

@@ -1,11 +1,5 @@
 include ../common
 
-mixin matchDetails()
-  | Your match is {{match.name}}
-
 template#match-content
-  .d-flex.flex-col.flex-wrap.justify-content-center.mt-5
-    .text-center
-      | some content
-    .d-flex.flex-row.flex-wrap.justify-content-center.col-12
-      +menu_button('match-profile-button', 'See Match Profile')
+  .d-flex.flex-column
+    | match page

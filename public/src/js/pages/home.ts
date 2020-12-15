@@ -14,7 +14,6 @@ export class HomePage extends Page {
 
   protected async onRender(_renderData: IHomePageRenderData) {
     console.log("home page has rendered")
-
   }
 
 };

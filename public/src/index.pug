@@ -18,6 +18,8 @@ html
         less = { env: 'development'}
     // Less stylesheet must be included prior to less.min.js.
     link(type="text/css" rel="stylesheet/less"  href='/css/style.less')
+    link(rel="stylesheet/less" href="https://fonts.googleapis.com/css2?family=Gotu&display=swap")
+
     script(src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js" integrity="sha512-rCgfeoOQxpi926f8I0zdBVUY9q/2SKXqrdIy23yEPuvWvJ8/jwDqhQ0eJJhS9L8ySZsmbEQp3LCgPTiaAk5WVw==" crossorigin="anonymous")
   
     // All CSS should be loaded as late as possible.
@@ -26,11 +28,8 @@ html
     
   body
     include nav
-    .container.my-auto
-      .h-100
-        #content.mx-auto.filter.row
-      #recaptcha-container
-    include pages/home
+    #content.mx-auto.filter.row
+    include pages/landing/index
     include pages/match
     
     script(type="module" src="/js/main.js")

@@ -1,1 +1,23 @@
-#nav-buttons.sticky-top.position-absolute
+#nav-buttons
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .d-flex.flex-grow-1
+      span.w-100.d-lg-none.d-block
+        // hidden spacer to center brand on mobile
+      a.navbar-brand.d-none.d-lg-inline-block(href='#')
+        | A
+      .w-100.text-right
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#myNavbar')
+          span.navbar-toggler-icon
+    #myNavbar.collapse.navbar-collapse.flex-grow-1.text-right
+      ul.navbar-nav.ml-auto.flex-nowrap
+        li.nav-item
+          a.nav-link.m-2.menu-item.nav-active(href='#') Graphic Design
+        li.nav-item
+          a.nav-link.m-2.menu-item(href='#') Illustration
+        li.nav-item
+          a.nav-link.m-2.menu-item(href='#') Augmented Reality
+        li.nav-item
+          a.nav-link.m-2.menu-item(href='#') Animation
+        li.nav-item
+          a.nav-link.m-2.menu-item(href='#') About Me
+

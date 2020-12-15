@@ -1,13 +1,11 @@
-include ../../common
+mixin highlight_reel()
+  img(src="/assets/flower.png" alt="flower")
 
 .slide
   .row
     .d-flex.flex-column.col-md-5
-      text Hello it's page 1
-      .img-container 
-        img(src="/assets/flower.png" alt="flower")
-      +four-line()
-    .d-flex.flex-column.col-md-7.text-right.justify-content-end
+      +highlight_reel()
+    .d-flex.flex-column.col-md-7.text-right.bg-white
       h1 A
       .d-flex.nav-bar.flex-column
         text Graphic Design
@@ -21,5 +19,4 @@ include ../../common
         text  E-mail
       .bio
         text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-    .row.border-bottom.align-items-end.mb-5
 

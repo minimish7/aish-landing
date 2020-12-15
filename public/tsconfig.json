@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "outDir": "dst/js",
+      "sourceMap": true,
+      "strict": true,
+      "lib": ["es2015", "es2017.object", "dom"],
+      "target": "ES6",
+      "moduleResolution": "Node",
+  },
+  "compileOnSave": true,
+  "include": [
+      "./src/js/*", "./src/js/pages/*", "./src/js/models/*" 
+  ],
+}

@@ -1,9 +1,22 @@
+mixin highlight_reel()
+  #highlightIndicators.carousel.slide(data-ride='carousel')
+    .carousel-inner
+      .carousel-item.active
+        img(src='/assets/flower.png' alt='First slide')
+      .carousel-item
+        img(src='/assets/surprise.jpg' alt='Second slide')
+      .carousel-item
+        img(src='/assets/orange.svg' alt='Third slide')
+    ol.carousel-indicators
+      li.active(data-target='#highlightIndicators' data-slide-to='0')
+      li(data-target='#highlightIndicators' data-slide-to='1')
+      li(data-target='#highlightIndicators' data-slide-to='2')
+
+
 .scroll-page
   .row
     .d-flex.flex-column.col-md-5
-      text Hello it's page 1
-      .img-container 
-        img(src="/assets/flower.png" alt="flower")
+      +highlight_reel()
     .d-flex.flex-column.col-md-7.text-right.justify-content-end
       h1 A
       .d-flex.nav-bar.flex-column

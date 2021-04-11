@@ -1,0 +1,46 @@
+@import "./style.less";
+
+.landing-page {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding-right: 2rem;
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+.landing-navbar {
+  margin-bottom: 1em;
+}
+
+.landing-navbar .page:hover {
+  color: @lilac;
+  cursor: pointer;
+}
+
+.social-media {
+  color: @lilac;
+  flex: row;
+}
+
+.social-media .media:hover {
+  color: @charcoal;
+  cursor: pointer;
+}
+
+.bio {
+  overflow: hidden;
+  height: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  text-transform: none;
+  margin-right: 0;
+}

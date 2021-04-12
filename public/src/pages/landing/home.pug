@@ -12,24 +12,23 @@ mixin highlight_reel()
       li(data-target='#highlightIndicators' data-slide-to='1')
       li(data-target='#highlightIndicators' data-slide-to='2')
 
-.scroll-page
-  .row.h-100
-    .d-flex.flex-column.col-md-5
-      +highlight_reel()
-    .d-flex.flex-column.landing-page.text-right.justify-content-end.bg-white
-      .d-flex.flex-column.landing-navbar
-        text.page Graphic Design
-        text.page Illustration
-        text.page Augmented Reality
-        text.page Animation
-        text.page About Me
-      .d-flex.flex-row.my-2.justify-content-end.social-media
-        text.media Youtube
-        text |
-        text.media Instagram
-        text |
-        text.media E-mail
-      .d-flex.flex-column
-        text.bio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+.scroll-page.row
+  .col-md-5
+    +highlight_reel()
+  .d-flex.align-items-end.flex-column.col-md-7.pl-5.pr-2.landing-page.text-right.justify-content-end.bg-white
+    .d-flex.flex-column.landing-navbar
+      text.page Graphic Design
+      text.page Illustration
+      text.page Augmented Reality
+      text.page Animation
+      text.page About Me
+    .d-flex.flex-row.my-4.justify-content-end.social-media
+      text.media Youtube
+      text |
+      text.media Instagram
+      text |
+      text.media E-mail
+    .d-flex.flex-row-reverse.mb-4.bio-container
+      text.w-75 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+  
     
-      

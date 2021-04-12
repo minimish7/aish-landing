@@ -12,16 +12,28 @@ mixin highlight_reel()
       li(data-target='#highlightIndicators' data-slide-to='1')
       li(data-target='#highlightIndicators' data-slide-to='2')
 
-.scroll-page.row
+mixin navigation()
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#myNavbar')
+        #myNavbar
+          ul.navbar-nav
+            li.nav-item
+              a.page.nav-link.menu-item.nav-active(href='#') Graphic Design
+            li.nav-item
+              a.page.nav-link.menu-item(href='#') Illustration
+            li.nav-item
+              a.page.nav-link.menu-item(href='#') Augmented Reality
+            li.nav-item
+              a.page.nav-link.menu-item(href='#') Animation
+            li.nav-item
+              a.page.nav-link.menu-item(href='#') About Me
+
+
+.scroll-page.row.ml-0
   .col-md-5
     +highlight_reel()
-  .d-flex.align-items-end.flex-column.col-md-7.pl-5.pr-2.landing-page.text-right.justify-content-end.bg-white
-    .d-flex.flex-column.landing-navbar
-      text.page Graphic Design
-      text.page Illustration
-      text.page Augmented Reality
-      text.page Animation
-      text.page About Me
+  .d-flex.align-items-end.flex-column.col-md-7.pl-5.pr-4.landing-page.text-right.justify-content-end.bg-white
+    .d-flex.flex-column
+      +navigation();
     .d-flex.flex-row.my-4.justify-content-end.social-media
       text.media Youtube
       text |

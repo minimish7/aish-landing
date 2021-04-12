@@ -12,8 +12,8 @@ mixin process_reel()
       li(data-target='#highlightIndicators' data-slide-to='1')
       li(data-target='#highlightIndicators' data-slide-to='2')
 
-.scroll-page
-  .d-flex.flex-row.process-header
+.scroll-page.d-flex.flex-column
+  .d-flex.flex-row.justify-content-center.process-header
     span My Creative Process
-  .d-flex.flex-column.process-container
+  .d-flex.flex-column.p-4.mx-4.mb-4.carousel-container
     +process_reel()
